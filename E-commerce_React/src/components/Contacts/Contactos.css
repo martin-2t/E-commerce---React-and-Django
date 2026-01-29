@@ -1,0 +1,83 @@
+/* Contenedor principal */
+.contactos-container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #f9f9f9; /* fondo claro */
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+/* Títulos y párrafos */
+.contactos-container h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.contactos-container p {
+  text-align: center;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+/* Formulario */
+.contactos-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Inputs y textarea */
+.contactos-form input,
+.contactos-form textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
+  transition: border 0.3s;
+}
+
+.contactos-form input:focus,
+.contactos-form textarea:focus {
+  border-color: #0077cc; /* color del enfoque */
+  outline: none;
+}
+
+/* Textarea */
+.contactos-form textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+/* Botón */
+.contactos-form button {
+  padding: 12px;
+  background-color: #0077cc;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contactos-form button:hover {
+  background-color: #005fa3;
+}
+
+/* Mensajes de éxito o error */
+.success {
+  margin-top: 15px;
+  color: green;
+  text-align: center;
+}
+
+.error {
+  margin-top: 15px;
+  color: red;
+  text-align: center;
+}

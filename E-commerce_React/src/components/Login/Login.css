@@ -1,0 +1,29 @@
+.login-form {
+  max-width: 360px;
+  margin: 60px auto;
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  background-color: #f4f4f4;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.login-title {
+  text-align: center;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.login-input {
+  padding: 10px 14px;
+  font-size: 15px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.login-input:focus {
+  outline: none;
+  border-color: #ffcc00;
+}

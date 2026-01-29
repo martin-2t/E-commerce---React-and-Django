@@ -1,0 +1,121 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 32px;
+  background-color: #1c1c1c; /* color más elegante que el negro puro */
+  color: white;
+  flex-wrap: wrap;
+  gap: 16px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3); /* pequeño sombreado */
+}
+
+/* Logo */
+.header-logo h1 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #ffcc00; /* color llamativo para el logo */
+}
+
+/* Nav centrado */
+.header-nav {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex: 1;
+}
+
+.header-nav a {
+  color: white;
+  font-weight: 500;
+  text-decoration: none;
+  padding: 6px 10px;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+
+.header-nav a:hover {
+  background-color: #ffcc00;
+  color: #1c1c1c;
+  text-decoration: none;
+}
+
+/* Buscador + carrito */
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Buscador */
+.header-busqueda input {
+  padding: 8px 12px;
+  border-radius: 20px;
+  border: 1px solid #555;
+  outline: none;
+  width: 220px;
+  max-width: 100%;
+  font-size: 14px;
+  transition: all 0.2s ease;
+}
+
+.header-busqueda input:focus {
+  border-color: #ffcc00;
+  box-shadow: 0 0 6px rgba(255, 204, 0, 0.5);
+}
+
+/* Carrito */
+.header-cart {
+  font-size: 24px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.header-cart:hover {
+  transform: scale(1.2);
+  color: #ffcc00;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .header-nav {
+    width: 100%;
+    justify-content: space-around;
+    margin: 10px 0;
+  }
+
+  .header-right {
+    width: 100%;
+    justify-content: flex-start;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+
+  .header-busqueda input {
+    width: 100%;
+  }
+}
+
+/* Botón de Login */
+.header-login {
+  padding: 8px 16px;
+  background-color: #ffcc00; /* color llamativo */
+  color: #1c1c1c; /* texto oscuro para contraste */
+  font-weight: 600;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.header-login:hover {
+  background-color: #e6b800; /* más oscuro al pasar el mouse */
+  transform: scale(1.05);
+}
